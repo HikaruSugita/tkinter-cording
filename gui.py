@@ -4,8 +4,8 @@ import time
 window_width = 1000
 window_height = 950
 
-canvas_width = 950
-canvas_height = 800
+field_width = 950
+field_height = 800
 
 # co→ball: 跳ね返るボール
 ball = {
@@ -14,7 +14,7 @@ ball = {
     "r": 5 
 }
 
-def create_circre(field, x, y, r, **kwargs):
+def create_ball(field, x, y, r, **kwargs):
     return field.create_oval(x-r, y-r, x+r,y+r, **kwargs)
 
 def main():
@@ -27,8 +27,8 @@ def main():
     guzai = t.Label(window, text="Hello World!")
     guzai.place(x=0, y=0)
 
-    field = t.Canvas(window, width=canvas_width, height=canvas_height, bg="black")
-    field.place(x=(window_width-canvas_width)/2, y=(window_height-canvas_height)/2)
+    field = t.Canvas(window, width=field_width, height=field_height, bg="black")
+    field.place(x=(window_width-field_width)/2, y=(window_height-field_height)/2)
 
     window.mainloop()
 
