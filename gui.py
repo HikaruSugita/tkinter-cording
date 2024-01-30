@@ -1,8 +1,8 @@
 import tkinter as t
 import time
 
-window_width = 700 
-window_height = 500
+window_width = 1000
+window_height = 950
 
 canvas_width = 950
 canvas_height = 800
@@ -28,8 +28,7 @@ def main():
     guzai.place(x=0, y=0)
 
     field = t.Canvas(window, width=canvas_width, height=canvas_height, bg="black")
-    #field.place(x=(window_width-canvas_width)/2, y=(window_height-canvas_height)/2)
-    field.place(x=0, y=0)
+    field.place(x=(window_width-canvas_width)/2, y=(window_height-canvas_height)/2)
 
     window.mainloop()
 
